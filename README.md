@@ -1,4 +1,9 @@
+riscv32 のクロスコンパイル toolchain を自分でコンパイルしてみたかった。
+msys2 の mingw64 の riscv64 toolchain の設定をコピー、改変してビルドしてみた。
+
 ## How to Build
+
+Quoted: <https://github.com/msys2/MINGW-packages/blob/master/README.md#using-packages>
 
 Build:
 
