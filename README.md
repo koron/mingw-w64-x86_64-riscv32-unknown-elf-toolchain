@@ -23,9 +23,11 @@ $ cd ..
 
 $ cd mingw-w64-riscv32-unknown-elf-newlib
 # rewrite `_bootstrap` to `1` in PKGBUILD
+$ sed -i -e 's/_bootstrap=0/_bootstrap=1/' PKGBUILD
 $ MINGW_ARCH=mingw64 makepkg-mingw -sLf
 $ package -U mingw-w64-riscv32-unknown-elf-mingw-4.4.0.20231231-1-any.pkg.tar.zst
 # rewrite `_bootstrap` to `0` in PKGBUILD
+$ sed -i -e 's/_bootstrap=1/_bootstrap=0/' PKGBUILD
 $ cd ..
 
 $ cd mingw-w64-riscv32-unknown-elf-gcc
