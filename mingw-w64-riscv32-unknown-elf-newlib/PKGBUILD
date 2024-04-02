@@ -1,7 +1,7 @@
 # Maintainer: Fabien Chouteau <chouteau@adacore.com>
 # Based on mingw-w64-arm-none-eabi-newlib
 
-_bootstrad=0
+_bootstrap=0
 
 _realname=newlib
 _target=riscv32-unknown-elf
